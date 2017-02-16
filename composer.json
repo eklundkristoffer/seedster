@@ -1,0 +1,15 @@
+{
+    "name": "eklundkristoffer/seedster",
+    "authors": [
+        {
+            "name": "Kristoffer Eklund",
+            "email": "kristoffereklund1@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Seedster\\": "src/"
+        }
+    }
+}
