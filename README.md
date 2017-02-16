@@ -14,6 +14,7 @@ or manually update your require block and run composer update
     }
 }
 ```
+and finally add `Seedster\SeedsterServiceProvider::class` to your `providers` array.
 
 # Usage
 You can now register a seed from any service provider
