@@ -7,7 +7,9 @@
             "email": "kristoffereklund1@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "illuminate/support": "5.5.* || 5.5-dev"
+    },
     "autoload": {
         "psr-4": {
             "Seedster\\": "src/"
