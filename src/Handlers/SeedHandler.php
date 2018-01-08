@@ -41,7 +41,9 @@ class SeedHandler
      */
     public function register($seeder)
     {
-        $this->seeders->push($seeder);
+        foreach ((array)$seeder as $seed) {
+            $this->seeders->push($seed);
+        }
     }
 
     /**
