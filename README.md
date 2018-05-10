@@ -10,7 +10,7 @@ or manually update your require block and run composer update
 ```
 {
     "require": {
-        "eklundkristoffer/seedster": "^2.0"
+        "eklundkristoffer/seedster": "^3.0"
     }
 }
 ```
