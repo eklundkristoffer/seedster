@@ -1,3 +1,7 @@
+[![Latest Stable Version](https://poser.pugx.org/eklundkristoffer/seedster/v/stable.svg)](https://packagist.org/packages/eklundkristoffer/seedster)
+[![Total Downloads](https://poser.pugx.org/eklundkristoffer/seedster/d/total.svg)](https://packagist.org/packages/eklundkristoffer/seedster)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # seedster
 Register laravel seeds from a package
 
