@@ -30,5 +30,10 @@ public function register()
     $this->app['seed.handler']->register(
         UserTableSeeder::class
     );
+    
+    // Or register an array of seeds
+    $this->app['seed.handler']->register(
+        [UserTableSeeder::class, PostsTableSeeder::class, ...]
+    );
 }
 ```
