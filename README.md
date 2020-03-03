@@ -14,7 +14,7 @@ or manually update your require block and run composer update
 ```
 {
     "require": {
-        "eklundkristoffer/seedster": "^3.0"
+        "eklundkristoffer/seedster": "^3.4"
     }
 }
 ```
@@ -30,7 +30,7 @@ public function register()
     $this->app['seed.handler']->register(
         UserTableSeeder::class
     );
-    
+
     // Or register an array of seeds
     $this->app['seed.handler']->register(
         [UserTableSeeder::class, PostsTableSeeder::class, ...]
