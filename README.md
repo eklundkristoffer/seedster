@@ -10,7 +10,7 @@ require the project using Composer:
 ```
 composer require eklundkristoffer/seedster
 ```
-or manually update your require block and run composer update
+or manually update your require block and run `composer update`
 ```
 {
     "require": {
@@ -18,22 +18,22 @@ or manually update your require block and run composer update
     }
 }
 ```
-and finally add `Seedster\SeedsterServiceProvider::class` to your `providers` array.
 
 # Usage
 You can now register a seed from any service provider
 ```php
-use Mypackage\Database\Seeds\UserTableSeeder;
+use Mypackage\Database\Seeds\PostsTableSeeder;
+use Mypackage\Database\Seeds\UsersTableSeeder;
 
 public function register()
 {
     $this->app['seed.handler']->register(
-        UserTableSeeder::class
+        UsersTableSeeder::class
     );
 
     // Or register an array of seeds
     $this->app['seed.handler']->register(
-        [UserTableSeeder::class, PostsTableSeeder::class, ...]
+        [UsersTableSeeder::class, PostsTableSeeder::class, ...]
     );
 }
 ```
