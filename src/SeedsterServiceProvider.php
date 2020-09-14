@@ -27,7 +27,7 @@ class SeedsterServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(ArtisanServiceProvider::class);
-        
+
         $this->app->singleton('seed.handler', function ($app) {
             return new SeedHandler($app, collect());
         });
