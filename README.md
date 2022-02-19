@@ -14,7 +14,7 @@ or manually update your require block and run `composer update`
 ```
 {
     "require": {
-        "eklundkristoffer/seedster": "^4.0"
+        "eklundkristoffer/seedster": "^5.0"
     }
 }
 ```
