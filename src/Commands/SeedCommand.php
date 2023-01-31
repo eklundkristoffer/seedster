@@ -82,6 +82,15 @@ class SeedCommand extends Command
      */
     protected function getSeeder($class)
     {
+        if (strpos($class, '\\') === false) {
+            $class = 'Database\\Seeders\\'.$class;
+        }
+
+        if ($class === 'Database\\Seeders\\DatabaseSeeder' &&
+            ! class_exists($class)) {
+            $class = 'DatabaseSeeder';
+        }
+
         $class = $this->laravel->make($class);
 
         return $class->setContainer($this->laravel)->setCommand($this);
